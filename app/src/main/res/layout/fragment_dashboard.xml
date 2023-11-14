@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context=".Dashboard">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Corona Virus COVID-19\nPhilippines Cases"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginTop="24dp"
+            android:textSize="24dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/phFlag"
+                android:layout_width="140dp"
+                android:layout_height="60dp"
+                android:background="@drawable/ph"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:id="@+id/lblActiveCase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:layout_gravity="center"
+                android:text="Active Cases"
+                android:textColor="#0F9D58"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/lblTotalNumberCases"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/colorTotalConfirmed"
+                android:textSize="36sp"
+                tools:text="154675" />
+
+            <TextView
+                android:id="@+id/lblTotalConfirmed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins"
+                android:text="Total Confirmed"
+                android:textColor="#0F9D58"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/lblTotalNumberConfirmed"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/colorTotalConfirmed"
+                android:textSize="36sp"
+                tools:text="154675" />
+
+            <TextView
+                android:id="@+id/lblTotalDeath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins"
+                android:text="Total Deaths"
+                android:textColor="#0F9D58"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/lblTotalNumberDeath"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/colorTotalDeaths"
+                android:textSize="36sp"
+                tools:text="154675" />
+
+            <TextView
+                android:id="@+id/lblTotalRecovered"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:layout_gravity="center"
+                android:text="Total Recovered"
+                android:textColor="#0F9D58"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/lblTotalNumberRecovered"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/colorTotalRecovered"
+                android:textSize="36sp"
+                tools:text="154675" />
+
+
+        </LinearLayout>
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progress_circular_home"
+                android:indeterminate="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+            />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
